@@ -10,10 +10,12 @@
 # https://gist.github.com/ssmereka/8773626
 # by Scott Smereka
 #---------------------------------------------------------
-user = eric
+user = "eric"
+
 # Sonarr Location.  The trailing slash is 
 # needed and important for rsync.
-SonarrLocation = "/home/$user/.config/NzbDrone/"
+SonarrLocation = "/home/${user}/.config/NzbDrone/"
+echo SonarrLocation
 
 # Location to backup the directory to.
 backupDirectory="/home/backups/sonarr/backup/"
