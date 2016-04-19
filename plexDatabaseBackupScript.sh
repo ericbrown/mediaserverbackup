@@ -14,12 +14,12 @@
 plexDatabase="/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/"
 
 # Location to backup the directory to.
-backupDirectory="~/backups/plex/"
+backupDirectory="/home/backups/plex/"
 
 # Log file for script's output named with 
 # the script's name, date, and time of execution.
 scriptName=$(basename ${0})
-log="~/backups/plex/logs/${scriptName}_`date +%m%d%y%H%M%S`.log"
+log="/home/backups/plex/logs/${scriptName}_`date +%m%d%y%H%M%S`.log"
 
 # Check for root permissions
 if [[ $EUID -ne 0 ]]; then
