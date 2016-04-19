@@ -8,6 +8,11 @@
 # Script Tested on:
 # Ubuntu 12.04 on 2/2/2014	[ OK ] 
 #---------------------------------------------------------
+# Revisions by Eric D Brown
+# Version 1.1
+# Script Tested on: 
+# Ubuntu 14.04 on 4/19/16
+#---------------------------------------------------------
 
 # Plex Database Location.  The trailing slash is 
 # needed and important for rsync.
