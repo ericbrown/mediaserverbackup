@@ -15,7 +15,7 @@
 plexDatabase="/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/"
 
 # Location to backup the directory to.
-backupDirectory="/mnt/usb/plexmediaserver/database/"
+backupDirectory="~/backups/plex/"
 
 # Log file for script's output named with
 # the script's name, date, and time of execution.
