@@ -20,7 +20,7 @@ backupDirectory="~/backups/plex/"
 # Log file for script's output named with
 # the script's name, date, and time of execution.
 scriptName=$(basename ${0})
-log="/mnt/usb/logs/${scriptName}_`date +%m%d%y%H%M%S`.log"
+log="~/backups/plex/logs/${scriptName}_`date +%m%d%y%H%M%S`.log"
 
 # Check for root permissions
 if [[ $EUID -ne 0 ]]; then
