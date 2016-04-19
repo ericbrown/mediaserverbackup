@@ -30,22 +30,27 @@ fi
 
 # Create Log
 echo -e "Staring Backup of Plex Database." > $log 2>&1
+echo -e "Staring Backup of Plex Database."
 echo -e "------------------------------------------------------------\n" >> $log 2>&1
 
-# # Stop Plex
-# echo -e "\n\nStopping Plex Media Server." >> $log 2>&1
-# echo -e "------------------------------------------------------------\n" >> $log 2>&1
-# sudo service plexmediaserver stop >> $log 2>&1
+# Stop Plex
+echo -e "\n\nStopping Plex Media Server." >> $log 2>&1
+echo -e "\n\nStopping Plex Media Server." 
+echo -e "------------------------------------------------------------\n" >> $log 2>&1
+sudo service plexmediaserver stop >> $log 2>&1
 
-# # Backup database
-# echo -e "\n\nStarting Backup." >> $log 2>&1
-# echo -e "------------------------------------------------------------\n" >> $log 2>&1
-# sudo rsync -av --delete "$plexDatabase" "$backupDirectory" >> $log 2>&1
+# Backup database
+echo -e "\n\nStarting Backup." >> $log 2>&1
+echo -e "\n\nStarting Backup." 
+echo -e "------------------------------------------------------------\n" >> $log 2>&1
+sudo rsync -av --delete "$plexDatabase" "$backupDirectory" >> $log 2>&1
 
-# # Restart Plex
-# echo -e "\n\nStarting Plex Media Server." >> $log 2>&1
-# echo -e "------------------------------------------------------------\n" >> $log 2>&1
-# sudo service plexmediaserver start >> $log 2>&1
+# Restart Plex
+echo -e "\n\nStarting Plex Media Server." >> $log 2>&1
+echo -e "\n\nStarting Plex Media Server."
+echo -e "------------------------------------------------------------\n" >> $log 2>&1
+sudo service plexmediaserver start >> $log 2>&1
 
-# # Done
-# echo -e "\n\nBackup Complete." >> $log 2>&1
+# Done
+echo -e "\n\nBackup Complete." >> $log 2>&1
+echo -e "\n\nBackup Complete."
