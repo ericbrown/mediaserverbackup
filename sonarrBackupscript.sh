@@ -13,7 +13,7 @@
 
 # Sonarr Location.  The trailing slash is 
 # needed and important for rsync.
-SonarrLocation = "/home/eric/.config/NzbDrone"
+SonarrLocation = "~/.config/NzbDrone/"
 
 # Location to backup the directory to.
 backupDirectory="/home/backups/sonarr/backup/"
