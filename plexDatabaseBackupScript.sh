@@ -11,7 +11,7 @@
 # Revisions by Eric D Brown
 # Version 1.1
 # Script Tested on: 
-# Ubuntu 14.04 on 4/19/16
+# Ubuntu 14.04 on 4/19/2016	[ OK ] 
 #---------------------------------------------------------
 
 # Plex Database Location.  The trailing slash is 
