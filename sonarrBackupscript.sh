@@ -14,7 +14,7 @@
 
 # Sonarr Location.  The trailing slash is 
 # needed and important for rsync.
-sonarr_db = "/home/eric/.config/NzbDrone/"
+sonarr_db="/home/eric/.config/NzbDrone/"
 echo $sonarr_db
 
 # Location to backup the directory to.
