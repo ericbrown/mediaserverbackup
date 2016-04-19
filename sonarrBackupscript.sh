@@ -45,7 +45,7 @@ sudo stop nzbdrone >> $log 2>&1
 echo -e "\n\nStarting Backup." >> $log 2>&1
 echo -e "\n\nStarting Backup." 
 echo -e "------------------------------------------------------------\n" >> $log 2>&1
-sudo rsync -av --delete "SonarrLocaiton" "$backupDirectory" >> $log 2>&1
+sudo rsync -av --delete "$SonarrLocaiton" "$backupDirectory" >> $log 2>&1
 
 # Restart Plex
 echo -e "\n\nStarting sonarr." >> $log 2>&1
