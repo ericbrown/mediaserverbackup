@@ -14,8 +14,8 @@
 
 # Sonarr Location.  The trailing slash is 
 # needed and important for rsync.
-SonarrLocation = "/home/eric/.config/NzbDrone/"
-echo $SonarrLocation
+sonarr_db = "/home/eric/.config/NzbDrone/"
+echo $sonarr_db
 
 # Location to backup the directory to.
 backupDirectory="/home/backups/sonarr/backup/"
@@ -47,7 +47,7 @@ sudo stop nzbdrone >> $log 2>&1
 echo -e "\n\nStarting Backup." >> $log 2>&1
 echo -e "\n\nStarting Backup." 
 echo -e "------------------------------------------------------------\n" >> $log 2>&1
-sudo rsync -av --delete "$SonarrLocation" "$backupDirectory" >> $log 2>&1
+sudo rsync -av --delete "$sonarr_db" "$backupDirectory" >> $log 2>&1
 
 # Restart Plex
 echo -e "\n\nStarting sonarr." >> $log 2>&1
